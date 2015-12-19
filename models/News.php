@@ -13,7 +13,7 @@
 
 			if ($id)
 			{
-
+                               
 				$db = Db::getConnection();
 
 				$result = $db->query('SELECT * from publication WHERE id=' . $id);
@@ -52,7 +52,7 @@
 			while($row = $result->fetch())
 			{
 				$newsList[$i]['id'] = $row['id'];
-				$newsList[$i]['title'] = $row['id'];
+				$newsList[$i]['title'] = $row['title'];
 				$newsList[$i]['date'] = $row['date'];
 				$newsList[$i]['short_content'] = $row['short_content'];
 				$i++;
